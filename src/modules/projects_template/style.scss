@@ -1,0 +1,268 @@
+.projects {
+    margin: {
+        bottom: 150px;
+    };
+    
+    &__wrapper {
+        padding: 0 105px;
+        box-sizing: border-box;
+
+        @media (max-width:992px) {
+            padding: 0;
+        }
+    }
+    &__back-link {
+        margin: {
+            bottom: 15px;
+        };
+        cursor: pointer;
+        .back-link {
+            &__title {
+                margin: {
+                    bottom: 20px;
+                };
+                font-size: 22px;
+                font-family: "Uni Sans Regular";
+                color: $textWhite;
+            }
+
+            &__arrow {
+
+            }
+        }
+    }
+
+    &__title {
+        margin: {
+            bottom: 70px;
+        };
+        padding: 0 $colWidth 0 $colWidth/2;
+        box-sizing: border-box;
+        font-size: 100px;
+        font-weight: 500;
+        font-family: "Reforma Grotesk Medium C";
+        text-transform: uppercase;
+        color: $textGreen;
+        @media (max-width:992px) {
+            padding: 0;
+            font-size: 80px;
+        }
+
+        @media (max-width:480px) {
+            font-size: 30px;
+        }
+    }
+
+    &__description {
+        margin: {
+            bottom: 60px;
+        };
+        display: flex;
+        .description {
+            &__man-icon {
+               margin: {
+                   right: $colWidth/2 - 49px;
+               };
+               @media (max-width:768px) {
+                   display: none;
+               }
+            }
+
+            
+            &__row {
+                width: 100%;
+                margin: {
+                    bottom: 5px;
+                };
+                display: flex;
+                font-size: 18px;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+                @media (max-width:768px) {
+                    font-size: 14px;
+                }
+            }
+
+            &__info {
+                width: 100%;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+            }
+            
+            &__title {
+                width: 40%;
+                font-family: "Uni Sans Regular";
+                color: $textGreen;
+            }
+
+            &__text {
+                width: 60%;
+                font-family: "Uni Sans Regular";
+                color: $textWhite;
+            }
+        }
+    }
+
+    &__article {
+        width: $colWidth*3;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        @media (max-width:992px) {
+            padding: 0 50px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        @media (max-width:480px) {
+            padding: 0;
+        }
+        .article {
+            &__title {
+                margin: {
+                    bottom: 60px;
+                };
+                font-size: 32px;
+                font-weight: bold;
+                font-family: "Uni Sans Semi Bold";
+                color: $textWhite;
+            }
+
+            &__text,
+            &__text-second {
+                font-size: 18px;
+                line-height: 1.3;
+                font-family: "Uni Sans Regular";
+                color: $textWhite;
+            }
+
+            &__basic-idea {
+                margin: {
+                    bottom: 25px;
+                };
+                padding: 25px 0;
+                font-size: 32px;
+                font-family: "Uni Sans Regular";
+                color: $textGreen;
+                border-top: 1px solid #cacaca;
+                border-bottom: 1px solid #cacaca;
+            }
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        margin: {
+            bottom: 60px;
+        };
+        display: flex;
+        position: relative;
+        overflow-x: hidden;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+
+        .slider {
+            &__button {
+                width: 50%;
+                height: 100%;
+                padding: 30px 50px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: flex-end;
+                position: absolute;
+                top: 0;
+            }
+
+            &__button-previous {
+                left: 0;
+            }
+
+            &__button-next {
+                justify-content: flex-end;
+                right: 0;
+            }
+
+            &__item {
+                width: 100%;
+                padding-top: 56.25%;
+                flex-shrink: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        @media (max-width:768px) {
+            flex-direction: column;
+            align-items: center;
+            background-image: url();
+        }
+        .nav {
+            &__button {
+                max-width: $colWidth*2;
+                width: 100%;
+                margin: 0 10px;
+                margin-bottom: 20px;
+                padding: 30px 25px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #1a2549;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $backgroundColorGreen;
+                }
+
+                &-next {
+                    text-align: end;
+                }
+            }
+
+            &__title {
+                margin: {
+                    bottom: 45px;
+                };
+                font-size: 32px;
+                font-weight: 500;
+                font-family: "Reforma Grotesk Medium C";
+                color: $textWhite;
+                @media (max-width:992px) {
+                    font-size: 22px;
+                }
+            }
+
+            &__link {
+                display: flex;
+                align-items: center;
+                &-next {
+                    justify-content: flex-end;
+                }
+            }
+
+            &__arrow {
+                &-previous {
+                    margin: {
+                        right: 30px;
+                    };
+                }
+
+                &-next {
+                    margin: {
+                        left: 30px;
+                    };
+                }
+            }
+
+            &__text {
+                font-size: 18px;
+                font-family: "Uni Sans Regular";
+                color: $textWhite;
+            }
+        }
+    }
+}

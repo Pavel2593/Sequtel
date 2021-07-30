@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Reforma Grotesk Medium C';
+    src: url('ReformaGroteskMediumC.eot');
+    src: url('./../fonts/ReformaGroteskMediumC.eot') format('embedded-opentype'),
+         url('./../fonts/ReformaGroteskMediumC.woff2') format('woff2'),
+         url('./../fonts/ReformaGroteskMediumC.woff') format('woff'),
+         url('./../fonts/ReformaGroteskMediumC.ttf') format('truetype'),
+         url('./../fonts/ReformaGroteskMediumC.svg#ReformaGroteskMediumC') format('svg');
+}
+
+
+@font-face {
+	font-family: 'Uni Sans Semi Bold';
+	src: url('UniSansSemiBold.eot');
+	src: local('Uni Sans SemiBold'), local('UniSansSemiBold'),
+		url('./../fonts/UniSansSemiBold.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/UniSansSemiBold.woff') format('woff'),
+		url('./../fonts/UniSansSemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uni Sans Regular';
+	src: url('UniSansRegular.eot');
+	src: local('Uni Sans Regular'), local('UniSansRegular'),
+		url('./../fonts/UniSansRegular.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/UniSansRegular.woff') format('woff'),
+		url('./../fonts/UniSansRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uni Sans Book';
+	src: url('./../fonts/UniSansBook.eot');
+	src: local('Uni Sans Book'), local('UniSansBook'),
+		url('./../fonts/UniSansBook.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/UniSansBook.woff') format('woff'),
+		url('./../fonts/UniSansBook.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uni Sans Semi Italic';
+	src: url('UniSansSemiBoldItalic.eot');
+	src: local('Uni Sans SemiBold Italic'), local('UniSansSemiBoldItalic'),
+		url('./../fonts/UniSansSemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/UniSansSemiBoldItalic.woff') format('woff'),
+		url('./../fonts/UniSansSemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}

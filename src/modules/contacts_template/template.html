@@ -1,0 +1,39 @@
+<head>
+    @@include("./../head/template.html")
+    <title>SEQUTEL - Системный интегратор.</title>
+    <meta name="description"  content="Контакты Sequtel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SEQUTEL - Системный интегратор." />
+    <meta property="og:description" content="+74956399376, Москва,Ленинская слобода" />
+    <meta property="og:url" content="https://sequtel.ru/contacts.html" />
+    <meta property="og:site_name" content="SEQUTEL - Системный интегратор." />
+    <meta property="og:image" content="./images/index/antena.png" />
+</head>
+<body class="background-page__contacts test">
+    @@include("./../header/template.html")
+    <main>
+        <section class="contacts section-center">
+            <h6 class="contacts__title">Контакты</h6>
+            <form action="" class="contacts__form">
+                <div class="form__row">
+                    <div class="form__col">
+                        <span class="form__subtitle">Name</span>
+                        <input class="form__input" type="text" name="contactsName" required>
+                        <span class="form__subtitle">Last name</span>
+                        <input class="form__input" type="text" name="contactsLastName" required>
+                        <span class="form__subtitle">Email</span>
+                        <input class="form__input" type="email" name="contactsEmail" required>
+                    </div>
+                    <div class="form__col2">
+                        <span class="form__subtitle">Message</span>
+                        <textarea class="form__textarea" name="contactsMessage"></textarea>
+                    </div>
+                </div>
+                <div class="form__row2">
+                    <button class="form__button" type="submit">SEND A MESSAGE</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    @@include("./../footer/template.html")
+</body>

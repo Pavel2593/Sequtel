@@ -1,0 +1,59 @@
+.partners {
+    margin: {
+        bottom: 150px;
+    };
+
+    &__title {
+        margin: {
+            bottom: 90px;
+        };
+        color: $textWhite;
+    }
+
+    &__list {
+        font-size: 26px;
+        font-family: "Uni Sans Regular";
+        @media (max-width:992px) {
+            font-size: 22px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__item {
+        padding: {
+            top: 20px;
+            bottom: 40px;
+        };
+        display: flex;
+        border-top: 2px solid $textGreen;
+        @media (max-width:480px) {
+            flex-direction: column;
+        }
+    }
+
+    .subtitle {
+        color: $textGreen;
+
+        &__wrapper {
+            width: 40%;
+            display: flex;
+            @media (max-width:480px) {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__text {
+        width: 60%;
+        text-align: end;
+        color: $textWhite;
+        @media (max-width:480px) {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}

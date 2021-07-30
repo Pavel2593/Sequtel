@@ -1,0 +1,114 @@
+.contacts {
+    margin: {
+        top: 260px;
+        bottom: 250px
+    };
+    &__title {
+        margin: {
+            bottom: 50px;
+        };
+        color: $textGreen;
+    }
+
+    &__form {
+        padding: 35px;
+        background-color: #222939;
+        
+        .form {
+            &__row {
+                margin: {
+                    bottom: 25px;
+                };
+                display: flex;
+                justify-content: space-between;
+                @media (max-width:768px) {
+                    flex-direction: column;
+                }
+            }
+
+            &__row2 {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            &__col {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+            }
+
+            &__col2 {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+            }
+
+            &__subtitle {
+                margin: {
+                    bottom: 15px;
+                };
+                font-size: 14px;
+                line-height: 14px;
+                font-family: "Uni Sans Regular";
+                color: $textWhite;
+            }
+
+            &__input {
+                margin: {
+                    bottom: 30px;
+                };
+                padding: 15px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+                font-family: "Uni Sans Regular";
+                color: $textInputBlack;
+                &:focus {
+                    outline: none;
+                }
+
+                &:last-child {
+                    @media (min-width:769px) {
+                        margin: {
+                            bottom: 0;
+                        };
+                    }
+                }
+            }
+
+            &__textarea {
+                height: 100%;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+                font-family: "Uni Sans Regular";
+                color: $textInputBlack;
+                &:focus {
+                    outline: none;
+                }
+
+                @media (max-width:768px) {
+                    height: 138px;
+                }
+            }
+
+            &__button {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: "Uni Sans Semi Bold";
+                border: none;
+                text-align: center;
+                color: $textWhite;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}

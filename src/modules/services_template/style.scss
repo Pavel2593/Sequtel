@@ -1,0 +1,127 @@
+.services {
+    margin: {
+        top: 250px;
+    };
+    position: relative;
+
+    &__title {
+        color: $textGreen
+    }
+}
+
+.solutions {
+    margin: {
+        bottom: 150px;
+    };
+    &__item {
+        padding: {
+            top: 15px;
+        };
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid $textGreen;
+
+        .item {
+            &__row {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__title {
+                width: 60%;
+                display: flex;
+                .title {
+                    font-size: 26px;
+                    font-family: "Uni Sans Regular";
+                    color: $textGreen;
+                }
+
+                .number {
+                    width: 25px;
+                }
+            }
+        
+            &__buttons {
+                display: flex;
+            }
+        
+            &__close {
+                width: 20px;
+                height: 19px;
+                margin: {
+                    right: 15px;
+                };
+                background-image: url('./../images/closeGrey.svg');
+                cursor: pointer;
+            }
+        
+            &__arrow {
+                width: 19px;
+                height: 21px;
+                background-image: url('./../images/arrowBottomGreen.svg');
+                cursor: pointer;
+            }
+
+            &__row2 {
+                padding: {
+                    bottom: 30px;
+                };
+                display: none;
+                justify-content: space-between;
+                font-size: 16px;
+                font-family: "Uni Sans Regular";
+                color: #a9c5cc;
+                @media (max-width:768px) {
+                    flex-direction: column;
+                }
+            }
+
+            &__description {
+                width: 40%;
+                margin: {
+                    bottom: 16px;
+                };
+                padding: {
+                    left: 40px
+                };
+                box-sizing: border-box;
+                line-height: 1.3;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                margin: {
+                    bottom: 16px;
+                };
+            }
+        }
+    }
+
+    &__item-selected {
+        .item {
+            &__close {
+                width: 20px;
+                height: 19px;
+                margin: {
+                    right: 15px;
+                };
+                background-image: url('./../images/closeGreen.svg');
+                cursor: pointer;
+            }
+        
+            &__arrow {
+                width: 19px;
+                height: 21px;
+                background-image: url('./../images/arrowBottomWhite.svg');
+                cursor: pointer;
+            }
+
+            &__row2 {
+                display: flex;
+            }
+        }
+    }
+}
